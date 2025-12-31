@@ -1,6 +1,8 @@
-# MAD NEWS - Satirischer Nachrichten-Generator
+# 🗞️ MAD NEWS - Satirischer Nachrichten-Generator
 
-Generiert satirische, positive Nachrichten aus BILD-Headlines mit Ollama und einem erweiterten Zahlen-Filter.
+Generiert satirische, positive Nachrichten aus News-Headlines mit Ollama und einem erweiterten Zahlen-Filter.
+
+> **Inspiration:** Dieses Projekt wurde inspiriert von [Mad News (1994)](https://archive.org/details/msdos_Mad_News_1994), einem DOS-Spiel, das satirische Nachrichten generierte. Wir haben die Idee ins KI-Zeitalter übertragen.
 
 ## Features
 
@@ -211,8 +213,118 @@ Dieses Projekt ist als künstlerisches Experiment zu verstehen: Wir versuchen, d
 
 ## 📜 Lizenz
 
-Anti-Capitalist Software License v1.4
+**Anti-Capitalist Software License v1.4**  
+Copyright (c) 2025 Lino Casu
+
+**⚠️ KOMMERZIELLE NUTZUNG STRENG VERBOTEN**
+
+Dieses Projekt steht unter der Anti-Capitalist Software License v1.4. 
+
+### Erlaubte Nutzung:
+- ✅ Persönliche, nicht-kommerzielle Nutzung
+- ✅ Bildungszwecke
+- ✅ Forschung und Entwicklung
+- ✅ Gemeinnützige Zwecke
+
+### **VERBOTEN:**
+- ❌ **Jegliche kommerzielle Nutzung**
+- ❌ **Verkauf der Software oder abgeleiteter Werke**
+- ❌ **Nutzung in gewinnorientierten Unternehmen**
+- ❌ **Monetarisierung durch Werbung**
+- ❌ **Bezahlte Dienste basierend auf dieser Software**
+
+**Vollständiger Lizenztext:** [Anti-Capitalist Software License v1.4](https://anticapitalist.software/)
+
+Bei Fragen zur Lizenzierung kontaktieren Sie: Lino Casu
 
 ---
 
-**Made with 🎭 by error-wtf**
+## ⚖️ Umfassende rechtliche Hinweise & Warnungen
+
+### 🚨 RSS Feed Quellen - WICHTIGE WARNUNG
+
+**ACHTUNG:** Nutzen Sie ausschließlich RSS Feeds von Quellen, die keine aggressive Abmahnpraxis betreiben!
+
+- ⚠️ **NICHT EMPFOHLEN:** Springer-Verlag Publikationen (BILD, WELT, etc.) - bekannt für Abmahnungen
+- ⚠️ Prüfen Sie die Nutzungsbedingungen Ihrer gewählten Quelle
+- ⚠️ Dieses Tool ist für **legale Satire** gedacht, nicht für Urheberrechtsverletzungen
+
+**Empfohlene sichere Quellen:**
+- Öffentlich-rechtliche Medien (Tagesschau, ZDF)
+- Creative-Commons-lizenzierte Nachrichtenquellen
+- Eigene/selbst gehostete News-Feeds
+
+**Sie tragen die volle Verantwortung für die Wahl Ihrer News-Quelle!**
+
+---
+
+### 🛡️ Satire-Prompt & Sicherheitsfilter
+
+Unser Satire-Prompt wurde nach **bestem Wissen und Gewissen** entwickelt und enthält:
+
+#### Implementierte Filter:
+1. **Zahlen-Filter:** Blockiert problematische Zahlensymbolik (18, 81, 88, etc.)
+2. **Marken-Filter:** Ersetzt echte Markennamen durch satirische Alternativen
+3. **Namens-Filter:** Vermeidet vollständige Nennung realer Personen
+4. **Blacklist:** 700+ verbotene Begriffe (Gewalt, Hass, Diskriminierung)
+5. **Positiv-Zwang:** KI muss positive, gewaltfreie Geschichten erzählen
+
+**Trotz aller Filter:**
+- KI-generierte Inhalte sind nicht 100% vorhersagbar
+- Unerwünschte Outputs können auftreten
+- Kontinuierliche Verbesserung nötig
+
+**Wir bitten um konstruktives Feedback bei problematischen Outputs!**
+
+---
+
+### ⚠️ RECHTLICHE WARNUNG & HAFTUNGSAUSSCHLUSS
+
+#### 1. Reine Satire
+Alle generierten Inhalte sind **fiktive Satire** und dienen ausschließlich der Unterhaltung. Es besteht keinerlei Anspruch auf Wahrheit oder Faktentreue.
+
+#### 2. Keine Verantwortung für Missbrauch
+**WICHTIG:** Die Entwickler und Rechteinhaber übernehmen **KEINE VERANTWORTUNG** für:
+- Missbräuchliche Nutzung dieser Software
+- Rechtsverstöße durch Dritte
+- Urheberrechtsverletzungen bei unsachgemäßer Quellennutzung
+- Schäden jeglicher Art durch Nutzung dieser Software
+- Von der KI generierte Inhalte, die gegen Gesetze verstoßen
+
+#### 3. Gegen Hetze & Gewalt
+Dieses Projekt steht explizit **GEGEN:**
+- Hetze und Hassrede
+- Gewalt und Gewaltverherrlichung
+- Diskriminierung jeglicher Art
+- Fehlinformationen und Desinformation
+
+Wir entwickeln Satire als **antifaschistisches Werkzeug**, um hetzerische Medien zu entlarven.
+
+#### 4. Nutzung auf eigene Gefahr
+Die Nutzung erfolgt **auf eigenes Risiko**. Sie sind verantwortlich für:
+- Die Wahl Ihrer News-Quelle
+- Die Prüfung generierter Inhalte vor Veröffentlichung
+- Die Einhaltung aller anwendbaren Gesetze
+- Die Respektierung von Urheberrechten Dritter
+
+#### 5. Keine Rechtsberatung
+Diese Software und Dokumentation stellen keine Rechtsberatung dar. Konsultieren Sie bei rechtlichen Fragen einen Anwalt.
+
+#### 6. Technische Grenzen
+- KI ist nicht perfekt - Filter können versagen
+- Keine Garantie für fehlerfreien Betrieb
+- Keine Haftung für technische Probleme oder Datenverlust
+
+#### 7. Disclosure & Transparenz
+**WIR ÜBERNEHMEN KEINE VERANTWORTUNG FÜR:**
+- Verleumdung oder Rufschädigung durch generierte Inhalte
+- Urheberrechtsverletzungen bei Missachtung der RSS-Warnung
+- Rechtliche Konsequenzen jeglicher Art
+- Missbräuchliche oder kriminelle Nutzung
+- Schäden an Dritten durch von dieser Software generierte Inhalte
+
+**Nutzen Sie dieses Tool verantwortungsvoll und rechtmäßig!**
+
+---
+
+**Made with 🎭 by error-wtf | Gegen Hetze, für Humor**
