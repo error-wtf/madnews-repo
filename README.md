@@ -185,6 +185,30 @@ Contributions sind willkommen! Bitte:
 3. Committe deine Änderungen
 4. Erstelle einen Pull Request
 
+---
+
+## ⚠️ Hinweis / Disclaimer
+
+### 1. Satire-Charakter
+Alle Beiträge auf dieser Seite sind frei erfundene Satire und dienen ausschließlich der Unterhaltung. Sie basieren auf Schlagzeilen, die wir automatisiert auslesen und mittels KI humoristisch neu interpretieren.
+
+### 2. Keine Diffamierung
+Es besteht kein Anspruch, reale Personen oder Institutionen zu verunglimpfen. Vielmehr möchten wir eine alternative, oft überzeichnete Perspektive auf die teils hetzerischen Originalmeldungen bieten.
+
+### 3. Automatisierte Erstellung & Gewähr
+Sämtliche Texte werden vollautomatisch von einer Sprach-KI generiert. Für sachliche Richtigkeit, Vollständigkeit oder etwaige unbeabsichtigte Verstöße kann keine Haftung übernommen werden.
+
+### 4. Urheberrecht
+Wir verwenden ausschließlich eigene, von der KI erstellte Formulierungen. Ursprüngliche Wortlaute aus Pressequellen werden so weit umgeschrieben, dass keine urheberrechtlich geschützten Passagen erkennbar bleiben.
+
+### 5. Filter & Qualitätskontrolle
+Wir entwickeln unsere Filter fortlaufend weiter, um problematische Inhalte frühzeitig auszusortieren. Sollten dennoch unpassende oder beleidigende Passagen erscheinen, freuen wir uns über konstruktives Feedback.
+
+### 6. Künstlerischer Ansatz
+Dieses Projekt ist als künstlerisches Experiment zu verstehen: Wir versuchen, den oft beängstigenden und hetzerischen Charakter mancher Schlagzeilen in absurde, unterhaltsame Texte zu verwandeln – ohne neuen Hass zu schüren.
+
+---
+
 ## 📜 Lizenz
 
 Anti-Capitalist Software License v1.4
