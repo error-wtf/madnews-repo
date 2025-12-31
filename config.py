@@ -21,7 +21,7 @@ OLLAMA_TEMPERATURE = float(os.getenv("OLLAMA_TEMPERATURE", "0.7"))
 # ─────────────────────────────────────────────────────────────
 # News Quellen (BILD via Google News Scraping)
 # ─────────────────────────────────────────────────────────────
-BILD_SCRAPE_URL = os.getenv("BILD_SCRAPE_URL", "https://news.google.com/search?q=site:bild.de&hl=de&gl=DE&ceid=DE%3Ade")
+BILD_SCRAPE_URL = os.getenv("BILD_SCRAPE_URL", "")
 USE_BILD_SCRAPER = os.getenv("USE_BILD_SCRAPER", "True").lower() == "true"
 
 # ─────────────────────────────────────────────────────────────

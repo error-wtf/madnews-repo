@@ -97,13 +97,23 @@ def main():
     
     # ====== NEWS SOURCE ======
     print_section("📰 NEWS SOURCE")
+    print("Gib die Google News Scrape URL für deine bevorzugte News-Quelle an.")
+    print("\nBeispiele:")
+    print("  BILD:    https://news.google.com/search?q=site:bild.de&hl=de&gl=DE&ceid=DE%3Ade")
+    print("  Spiegel: https://news.google.com/search?q=site:spiegel.de&hl=de&gl=DE&ceid=DE%3Ade")
+    print("  Zeit:    https://news.google.com/search?q=site:zeit.de&hl=de&gl=DE&ceid=DE%3Ade")
+    print("  Taz:     https://news.google.com/search?q=site:taz.de&hl=de&gl=DE&ceid=DE%3Ade")
+    print()
     
-    config['BILD_SCRAPE_URL'] = get_input(
-        "BILD Scrape URL",
-        "https://news.google.com/search?q=site:bild.de&hl=de&gl=DE&ceid=DE%3Ade"
-    )
+    while True:
+        url = get_input("News Feed URL")
+        if url and url.startswith("http"):
+            config['BILD_SCRAPE_URL'] = url
+            break
+        else:
+            print("⚠️  Bitte eine gültige URL eingeben (muss mit http:// oder https:// beginnen)")
     
-    config['USE_BILD_SCRAPER'] = str(get_yes_no("BILD Scraper nutzen?", default=True))
+    config['USE_BILD_SCRAPER'] = str(get_yes_no("News Scraper aktivieren?", default=True))
     
     # ====== OUTPUT CONFIGURATION ======
     print_section("⚙️  OUTPUT CONFIGURATION")
