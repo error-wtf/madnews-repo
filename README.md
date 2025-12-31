@@ -2,6 +2,8 @@
 
 Generiert satirische, positive Nachrichten aus News-Headlines mit Ollama und einem erweiterten Zahlen-Filter.
 
+> **🌐 Live Demo:** [https://error.wtf/mad-news/](https://error.wtf/mad-news/)
+
 > **Inspiration:** Dieses Projekt wurde inspiriert von [Mad News (1994)](https://archive.org/details/msdos_Mad_News_1994), einem DOS-Spiel, das satirische Nachrichten generierte. Wir haben die Idee ins KI-Zeitalter übertragen.
 
 ## Features
