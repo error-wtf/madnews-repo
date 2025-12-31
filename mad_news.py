@@ -14,7 +14,7 @@ from datetime import datetime
 from pathlib import Path
 
 from config import OUTPUT_DIR, OUTPUT_FILE, MAX_HEADLINES, FTP_ENABLED
-from fetch_rss import fetch_bild_headlines
+from fetch_rss import fetch_news_headlines
 from twist_with_model import generate_satire
 from ftp_uploader import upload_to_ftp, test_ftp_connection
 
@@ -119,7 +119,7 @@ def main():
     logger.info("MAD NEWS Generator startet...")
     
     # Headlines holen
-    headlines = fetch_bild_headlines(max_items=args.max)
+    headlines = fetch_news_headlines(max_items=args.max)
     if not headlines:
         logger.error("Keine Headlines gefunden!")
         sys.exit(1)

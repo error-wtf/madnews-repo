@@ -1,12 +1,12 @@
 """
-rss_fetcher.py - BILD Headlines Scraper (via Google News)
+rss_fetcher.py - News Headlines Scraper (via Google News)
 """
 import logging
 import requests
 from bs4 import BeautifulSoup
 from typing import List
 
-from config import BILD_SCRAPE_URL, REQUEST_TIMEOUT, MAX_HEADLINES
+from config import NEWS_SCRAPE_URL, REQUEST_TIMEOUT, MAX_HEADLINES
 
 logger = logging.getLogger(__name__)
 
@@ -35,7 +35,7 @@ FALLBACK_HEADLINES = [
 
 def fetch_headlines(max_items: int = MAX_HEADLINES) -> List[str]:
     """
-    Scraped BILD-Headlines von Google News.
+    Scraped News-Headlines von Google News.
     
     Args:
         max_items: Maximale Anzahl Headlines
@@ -44,9 +44,9 @@ def fetch_headlines(max_items: int = MAX_HEADLINES) -> List[str]:
         Liste von Headlines
     """
     try:
-        logger.info(f"Scrape BILD-Headlines von Google News...")
+        logger.info(f"Scrape News-Headlines von Google News...")
         response = requests.get(
-            BILD_SCRAPE_URL,
+            NEWS_SCRAPE_URL,
             headers=_HEADERS,
             timeout=REQUEST_TIMEOUT
         )
@@ -63,7 +63,7 @@ def fetch_headlines(max_items: int = MAX_HEADLINES) -> List[str]:
         
         if headlines:
             headlines = headlines[:max_items]
-            logger.info(f"OK: {len(headlines)} BILD-Headlines gefunden")
+            logger.info(f"OK: {len(headlines)} News-Headlines gefunden")
             return headlines
         
         logger.warning("Keine Headlines gefunden, nutze Fallback")

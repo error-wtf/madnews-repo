@@ -8,7 +8,7 @@ Generiert satirische, positive Nachrichten aus News-Headlines mit Ollama und ein
 
 ## Features
 
-- BILD Scraping via Google News
+- News Scraping via Google News (beliebige Quelle konfigurierbar)
 - Satire-Generierung mit Ollama (`gpt-oss:120b-cloud` oder lokal)
 - Intelligenter Zahlen-Filter - verhindert problematische Zahlen (18, 81, 88)
 - Bevorzugte sichere Zahlen (13, 17, 19, 23, 37, 42, 52, 73, 93, 103)
@@ -126,8 +126,8 @@ FTP_REMOTE_DIR=madnews
 FTP_REMOTE_FILE=index.html
 
 # NEWS SOURCE
-BILD_SCRAPE_URL=https://news.google.com/search?q=site:bild.de&hl=de&gl=DE&ceid=DE%3Ade
-USE_BILD_SCRAPER=True
+NEWS_SCRAPE_URL=https://news.google.com/search?q=site:tagesschau.de&hl=de&gl=DE&ceid=DE%3Ade
+USE_NEWS_SCRAPER=True
 
 # OUTPUT
 MAX_HEADLINES=30
@@ -144,7 +144,7 @@ madnews-repo/
 ├── run.py                   # Hauptskript
 ├── config.py                # Konfiguration (lädt .env)
 ├── twist_with_model.py      # Ollama API Client
-├── bild_scraper.py          # BILD Headline Scraper
+├── news_scraper.py          # News Headline Scraper
 ├── ftp_uploader.py          # FTP Upload Handler
 ├── satire_prompt.txt        # 🔢 LLM Prompt + Zahlen-Filter
 ├── requirements.txt         # Python Dependencies

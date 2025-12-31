@@ -73,7 +73,7 @@ def _fetch(url: str, timeout: int = 8) -> bytes | None:
 # --------------------------------------------------------------------------- #
 # 3) Parser-Helfer für JSON-Feeds                                             #
 # --------------------------------------------------------------------------- #
-def _parse_bild_json(data: bytes, title_key: str, max_items: int) -> List[str]:
+def _parse_json_feed(data: bytes, title_key: str, max_items: int) -> List[str]:
     try:
         items = json.loads(data)
         # Feed liefert Liste von Dicts unter Root

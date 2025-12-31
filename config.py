@@ -19,10 +19,10 @@ OLLAMA_MAX_TOKENS = int(os.getenv("OLLAMA_MAX_TOKENS", "32768"))
 OLLAMA_TEMPERATURE = float(os.getenv("OLLAMA_TEMPERATURE", "0.7"))
 
 # ─────────────────────────────────────────────────────────────
-# News Quellen (BILD via Google News Scraping)
+# News Quellen (Google News Scraping)
 # ─────────────────────────────────────────────────────────────
-BILD_SCRAPE_URL = os.getenv("BILD_SCRAPE_URL", "")
-USE_BILD_SCRAPER = os.getenv("USE_BILD_SCRAPER", "True").lower() == "true"
+NEWS_SCRAPE_URL = os.getenv("NEWS_SCRAPE_URL", "")
+USE_NEWS_SCRAPER = os.getenv("USE_NEWS_SCRAPER", "True").lower() == "true"
 
 # ─────────────────────────────────────────────────────────────
 # Ausgabe

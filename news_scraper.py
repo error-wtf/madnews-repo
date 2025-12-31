@@ -2,8 +2,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-def scrape_bild_headlines():
-    url = "https://news.google.com/search?q=site:bild.de&hl=de&gl=DE&ceid=DE%3Ade"
+def scrape_news_headlines():
+    url = "https://news.google.com/search?q=site:tagesschau.de&hl=de&gl=DE&ceid=DE%3Ade"
     headers = {"User-Agent": "Mozilla/5.0"}
     try:
         html = requests.get(url, headers=headers).text

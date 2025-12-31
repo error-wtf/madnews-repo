@@ -1,7 +1,7 @@
 """
 run.py – fetch → satire → HTML
 --------------------------------
-• holt bis zu 30 BILD-Headlines (fetch_rss.py)
+• holt bis zu 30 News-Headlines (fetch_rss.py)
 • generiert pro Headline einen validierten Satire-Block
 • schreibt alles in docs/index.html (Basis-Template hart codiert)
 """
@@ -9,14 +9,14 @@ run.py – fetch → satire → HTML
 from pathlib import Path
 from datetime import datetime as dt
 
-from fetch_rss import fetch_bild_headlines      # unverändert
+from fetch_rss import fetch_news_headlines
 from twist_with_model import generate_satire
 
 MAX_ITEMS = 30
 OUT_FILE   = Path("docs/index.html")
 
-print("📰  Hole BILD-Headlines …")
-headline_list = fetch_bild_headlines(max_items=30)
+print("📰  Hole News-Headlines …")
+headline_list = fetch_news_headlines(max_items=30)
 print(f"→ {len(headline_list)} Headlines gefunden\n")
 
 satire_blocks: list[str] = []

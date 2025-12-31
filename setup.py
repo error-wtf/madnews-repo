@@ -99,21 +99,21 @@ def main():
     print_section("📰 NEWS SOURCE")
     print("Gib die Google News Scrape URL für deine bevorzugte News-Quelle an.")
     print("\nBeispiele:")
-    print("  BILD:    https://news.google.com/search?q=site:bild.de&hl=de&gl=DE&ceid=DE%3Ade")
     print("  Spiegel: https://news.google.com/search?q=site:spiegel.de&hl=de&gl=DE&ceid=DE%3Ade")
     print("  Zeit:    https://news.google.com/search?q=site:zeit.de&hl=de&gl=DE&ceid=DE%3Ade")
     print("  Taz:     https://news.google.com/search?q=site:taz.de&hl=de&gl=DE&ceid=DE%3Ade")
+    print("  Heise:   https://news.google.com/search?q=site:heise.de&hl=de&gl=DE&ceid=DE%3Ade")
     print()
     
     while True:
         url = get_input("News Feed URL")
         if url and url.startswith("http"):
-            config['BILD_SCRAPE_URL'] = url
+            config['NEWS_SCRAPE_URL'] = url
             break
         else:
             print("⚠️  Bitte eine gültige URL eingeben (muss mit http:// oder https:// beginnen)")
     
-    config['USE_BILD_SCRAPER'] = str(get_yes_no("News Scraper aktivieren?", default=True))
+    config['USE_NEWS_SCRAPER'] = str(get_yes_no("News Scraper aktivieren?", default=True))
     
     # ====== OUTPUT CONFIGURATION ======
     print_section("⚙️  OUTPUT CONFIGURATION")
@@ -145,8 +145,8 @@ def main():
         f.write(f"FTP_TIMEOUT={config['FTP_TIMEOUT']}\n\n")
         
         f.write("# NEWS SOURCE\n")
-        f.write(f"BILD_SCRAPE_URL={config['BILD_SCRAPE_URL']}\n")
-        f.write(f"USE_BILD_SCRAPER={config['USE_BILD_SCRAPER']}\n\n")
+        f.write(f"NEWS_SCRAPE_URL={config['NEWS_SCRAPE_URL']}\n")
+        f.write(f"USE_NEWS_SCRAPER={config['USE_NEWS_SCRAPER']}\n\n")
         
         f.write("# OUTPUT CONFIGURATION\n")
         f.write(f"MAX_HEADLINES={config['MAX_HEADLINES']}\n")
